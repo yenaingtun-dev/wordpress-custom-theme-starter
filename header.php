@@ -10,13 +10,14 @@
 
 <?php
 wp_head();
-// $home_fields = get_fields(THAI_HOME_PAGE);
+$home_fields = get_fields(MIA_HOME_PAGE);
+var_dump($home_fields);
 ?>
 
 <body class="bg-white gap font-Poppins">
 <!-- navbar -->
-<?php get_template_part('template-parts/section-navbar', null, array('home_fields' => $home_fields)); ?>
+<?= get_template_part('template-parts/section-navbar', null, array('home_fields' => $home_fields)); ?>
 <!-- banner -->
 <?php if (!is_tax()) : ?>
-    <?php get_template_part('template-parts/section-banner', null); ?>
+    <?= get_template_part('template-parts/section-banner', null); ?>
 <?php endif; ?>
