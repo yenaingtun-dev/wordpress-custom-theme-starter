@@ -11,7 +11,6 @@
 <?php
 wp_head();
 $home_fields = get_fields(MIA_HOME_PAGE);
-var_dump($home_fields);
 ?>
 
 <body class="bg-white gap font-Poppins">
